@@ -107,4 +107,4 @@ src/main/java/com/springboot/project/HospitalManagent/
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
-Developed by **Sumit Nagawade** 
+Developed by **Mauli Nagawade** 

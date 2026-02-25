@@ -1,0 +1,27 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.springboot.project:HospitalManagent >---------------
+[INFO] Building HospitalManagent 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ HospitalManagent ---
+[INFO] Deleting D:\Java Backend\HospitalManagent\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ HospitalManagent ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ HospitalManagent ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 42 source files with javac [debug parameters release 21] to target\classes
+[WARNING] /D:/Java Backend/HospitalManagent/src/main/java/com/springboot/project/HospitalManagent/entity/Doctor.java:[34,29] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /D:/Java Backend/HospitalManagent/src/main/java/com/springboot/project/HospitalManagent/entity/Doctor.java:[37,31] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /D:/Java Backend/HospitalManagent/src/main/java/com/springboot/project/HospitalManagent/entity/User.java:[38,19] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /D:/Java Backend/HospitalManagent/src/main/java/com/springboot/project/HospitalManagent/entity/Patient.java:[17,1] Not generating toString(): A method with that name already exists
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.465 s
+[INFO] Finished at: 2026-02-25T11:33:34+05:30
+[INFO] ------------------------------------------------------------------------

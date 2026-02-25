@@ -53,11 +53,20 @@ public class AppointmentService {
 
     }
 
-    public @Nullable List<AppointmentResponseDto> getAllAppointmentsOfDoctor(Long id) {
+    public List<AppointmentResponseDto> getAllAppointmentsOfDoctor(String username) {
 
-        List<Appointment> appointments = appointmentRepository.findByDoctorId(id);
+        Doctor doctor = doctorRepository
+                .findByUserUsername(username)
+                .orElseThrow(() ->
+                        new EntityNotFoundException("Doctor not found for username: " + username)
+                );
+
+        List<Appointment> appointments =
+                appointmentRepository.findByDoctorId(doctor.getId());
+
         return appointments.stream()
-                .map(a->modelMapper.map(a, AppointmentResponseDto.class))
+                .map(a -> modelMapper.map(a, AppointmentResponseDto.class))
                 .toList();
     }
+
 }

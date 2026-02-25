@@ -25,6 +25,8 @@ public class DoctorService {
     private final UserRepository userRepository;
     private final ModelMapper modelMapper;
 
+    
+
 
     public List<DoctorResponseDto> getAllDoctors() {
         return doctorRepository.findAll()

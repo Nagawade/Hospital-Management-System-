@@ -13,18 +13,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-
 public class InsuranceService {
 
-    @Autowired
-    private final  InsuranceRepository insuranceRepository;
-    private final  PatientRepository patientRepository;
+    private final InsuranceRepository insuranceRepository;
+    private final PatientRepository patientRepository;
 
     @Transactional
     public Patient assignInsurenceToPatient(Insurance insurance, Long patientId) {
 
         Patient patient = patientRepository.findById(patientId)
-                .orElseThrow(() ->new EntityNotFoundException("Patient is not present with id: " + patientId));
+                .orElseThrow(() -> new EntityNotFoundException("Patient is not present with id: " + patientId));
 
         patient.setInsurance(insurance);
         insurance.setPatient(patient);
@@ -40,8 +38,6 @@ public class InsuranceService {
 
         patient.setInsurance(null);
 
-
     }
-
 
 }
